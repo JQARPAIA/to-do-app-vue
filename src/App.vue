@@ -1,26 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="d-flex flex-column justify-content-between vh-100">
+    <div class="container mt-3">
+      <todo-app/>
+    </div>
+    <div class="h5 d-flex justify-content-center align-items-center">
+      <p>Creado por <a href="https://josearpaiaq.netlify.app/" class="fw-bold text-decoration-none"  target="blank">Jose Arpaia</a></p>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TodoApp from './components/todo-app.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {TodoApp}
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
