@@ -10,8 +10,14 @@
     >
       <p class="m-0" :class="{'isCompleted': tarea.isCompleted}">{{ tarea.tarea }}</p>
       <div>
-        <i v-if="tarea.isCompleted" class="fa-solid fa-undo-alt me-2" @click="taskDone(tarea.id)"></i>
-        <i v-if="!tarea.isCompleted" class="fa-solid fa-circle-check me-2" @click="taskDone(tarea.id)"></i>   
+        <button
+          type="button" 
+          class="btn btn-labeled btn-success me-1"
+          @click="taskDone(tarea.id)"
+        >
+          <i v-if="tarea.isCompleted" class="fa-solid fa-undo-alt text-white  "></i>
+          <i v-if="!tarea.isCompleted" class="fa-solid fa-circle-check text-white"></i>
+        </button>
         <button 
           type="button" 
           class="btn btn-labeled btn-danger"
@@ -30,7 +36,7 @@
 
           <!-- Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">¿Estas seguro?</h4>
+            <h4 class="modal-title">¿Estás seguro?</h4>
           </div>
 
           <!-- Modal body -->
@@ -85,6 +91,8 @@ export default {
 <style scoped>
   .isCompleted {
     text-decoration: line-through;
-
+  }
+  #myModal {
+    color: black;
   }
 </style>
