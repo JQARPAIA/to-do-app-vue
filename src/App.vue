@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column justify-content-between vh-100">
+  <div id="app" class=" d-flex flex-column justify-content-between vh-100">
     <div class="container mt-3">
       <todo-app/>
     </div>
@@ -17,3 +17,11 @@ export default {
   components: {TodoApp}
 }
 </script>
+<style scoped>
+
+  #app {
+    background-color: rgb(58, 54, 54);
+    color: #fff;
+  }
+
+</style>

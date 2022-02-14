@@ -1,7 +1,9 @@
 {
+  "author": "Jose Arpaia",
   "name": "to-do-app-with-provide",
   "version": "0.1.0",
   "private": true,
+  "description": "This is a to-do app made with vue and bootstrap, developed in order to improve programming skills.",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
